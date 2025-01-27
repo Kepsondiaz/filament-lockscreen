@@ -2,13 +2,13 @@
 
 namespace Kepsondiaz\Lockscreen\Http\Controller\LockScreen;
 
-use Illuminate\Http\Request;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Foundation\Application;
 use Illuminate\Validation\ValidationException;
 
 class LockScreenController extends Controller
@@ -31,7 +31,7 @@ class LockScreenController extends Controller
     {
 
         if (! Auth::guard('web')->validate([
-            'email'    => $request->user()->email,
+            'email' => $request->user()->email,
             'password' => $request->password,
         ])) {
             throw ValidationException::withMessages([

@@ -3,10 +3,10 @@
 namespace Kepsondiaz\Lockscreen\Http\Middleware;
 
 use Closure;
+use Illuminate\Contracts\Routing\ResponseFactory;
+use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Contracts\Routing\UrlGenerator;
-use Illuminate\Contracts\Routing\ResponseFactory;
 
 class LockScreen
 {
