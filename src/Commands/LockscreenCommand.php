@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Kepsondiaz\Lockscreen\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LockscreenCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'lockscreen';
 
     public $description = 'My command';
 
