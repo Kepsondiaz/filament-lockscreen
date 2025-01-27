@@ -2,9 +2,9 @@
 
 namespace Kepsondiaz\Lockscreen;
 
+use Kepsondiaz\Lockscreen\Commands\LockscreenCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Kepsondiaz\Lockscreen\Commands\LockscreenCommand;
 
 class LockscreenServiceProvider extends PackageServiceProvider
 {

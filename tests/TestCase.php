@@ -3,8 +3,8 @@
 namespace Kepsondiaz\Lockscreen\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Kepsondiaz\Lockscreen\LockscreenServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
