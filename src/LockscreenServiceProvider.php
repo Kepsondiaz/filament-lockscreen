@@ -19,6 +19,7 @@ class LockscreenServiceProvider extends PackageServiceProvider
             ->name('lockscreen')
             ->hasConfigFile()
             ->hasViews()
+            ->hasRoute('lockscreen')
             ->hasMigration('create_lockscreen_table')
             ->hasCommand(LockscreenCommand::class);
     }
